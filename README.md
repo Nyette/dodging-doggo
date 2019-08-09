@@ -1,4 +1,4 @@
-# Endless Runner / Dodging Doggo
+# Dodging Doggo
 
 Help the dog avoid all obstacles!
 
