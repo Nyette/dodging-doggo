@@ -19,3 +19,11 @@ You will also see any lint errors in the console.
 * [Create React App](https://github.com/facebook/create-react-app)
 
 * [IonPhaser](https://github.com/proyecto26/ion-phaser)
+
+## Acknowledgments
+
+[Assets were created by Novagoat.](https://audrey.itch.io/doggy-)
+
+No copyright infringement intended.
+
+This project was just for fun/practice.
