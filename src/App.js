@@ -6,12 +6,22 @@ import './App.css';
 
 class App extends Component {
   state = {
-    initialize: false,
+    initialize: true,
     game: {
       width: "100%",
       height: "100%",
       type: Phaser.AUTO,
-      scene: {}
+      scene: {
+        preload: function() {
+          this.load.image('dog', '../assets/dogPink.png')
+        },
+        create: function() {
+          this.dog = this.add.sprite(40, 80, 'dog')
+        },
+        update: function() {
+          // the dog's movement controls
+        }
+      }
     }
   }
   render() {
