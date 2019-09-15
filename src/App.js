@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Phaser from 'phaser';
 import { IonPhaser } from '@ion-phaser/react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -12,8 +12,12 @@ class App extends Component {
       height: "100%",
       type: Phaser.AUTO,
       scene: {
+        init: function() {
+          // What goes in here?
+          this.cameras.main.setBackgroundColor('#24252A')
+        },
         preload: function() {
-          this.load.image('dog', '../assets/dogPink.png')
+          this.load.image('dog', 'assets/dogPink.png')
         },
         create: function() {
           this.dog = this.add.sprite(40, 80, 'dog')
