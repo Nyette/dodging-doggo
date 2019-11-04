@@ -22,39 +22,46 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <div class="game-container">
-    <script>
-    let config = {
-      type: Phaser.AUTO,
-      width: 400,
-      height: 400,
-      scene: {
-        preload: preload,
-        create: create,
-        update: update
-      }
-    };
+      <script>
+        let config = {
+          type: Phaser.AUTO,
+          width: 400,
+          height: 400,
+          physics: {
+            default: 'arcade',
+            arcade: {
+              gravity: { y: 300 },
+              debug: false
+            }
+          },
+          scene: {
+            preload: preload,
+            create: create,
+            update: update
+          }
+        };
 
-    let game = new Phaser.Game(config);
+        let game = new Phaser.Game(config);
 
-    function preload ()
-    {
-      this.load.image('dogPinkSit', 'assets/dogPinkSit.png');
-      this.load.image('grassCenter', 'assets/grassCenter.png');
-      this.load.image('grassCliffLeft', 'assets/grassCliffLeft.png');
-      this.load.image('grassCliffRight', 'assets/grassCliffRight.png');
-    }
+        function preload ()
+        {
+          this.load.image('dogPinkSit', 'assets/dogPinkSit.png');
+          this.load.image('grassCenter', 'assets/grassCenter.png');
+          this.load.image('grassCliffLeft', 'assets/grassCliffLeft.png');
+          this.load.image('grassCliffRight', 'assets/grassCliffRight.png');
+        }
 
-    function create ()
-    {
-      this.add.image(200, 200, 'dogPinkSit');
-      this.add.image(200, 300, 'grassCenter');
-    }
+        function create ()
+        {
+          this.add.image(200, 200, 'dogPinkSit');
+          this.add.image(200, 300, 'grassCenter');
+        }
 
-    function update ()
-    {
+        function update ()
+        {
 
-    }
-    </script>
+        }
+      </script>
     </div>
 
     <div class="title">
