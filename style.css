@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Passero+One&display=swap');
+
+html {
+  height: 100%;
+}
+
 body {
+  min-height: 100%;
   text-align: center;
+  background: linear-gradient(#e66465, #9198e5);
+  color: white;
+  font-family: 'Passero One';
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .title {
-  color: pink;
+  /* create a box around any text */
+  font-size: 40px;
 }
