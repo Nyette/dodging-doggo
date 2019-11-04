@@ -17,8 +17,9 @@ body {
 }
 
 .title {
-  /* create a box around any text */
   font-size: 40px;
+  border: solid 5px white;
+  padding: 15px;
 }
 
 .controls {
